@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Pre-load event */
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 422 !important;
+  background-color: #fff;
+}
+.preloader img {
+  display: block;
+  width: 5vw;
+  margin: 50vh auto;
+}
+.opacity {
+  visibility: hidden;
+}
+/* End pre-load event */
+.logo {
+  color: red;
+  word-spacing: 0.5px;
+}
+
+.overlay {
+  height: 0%;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow-y: hidden;
+  transition: 1s;
+  z-index: 10;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f0ad4e;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 5vh;
+  right: 4vw;
+  font-size: 30px;
+}
+.social-icons {
+  margin-bottom: 2rem;
+  list-style: none;
+  padding: 2rem 0rem 0rem 0rem;
+  font-size: 1.5rem;
+}
+.social-icons li {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+#intro {
+  position: relative;
+  color: white;
+  max-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./images/pexels-mikhail-nilov-7989234.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#intro .writeup {
+  text-align: center;
+  margin: 25vh auto;
+}
+.writeup h1 {
+  font-size: 8vw;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 4vh;
+  padding: 0 auto;
+  margin-bottom: 7vh;
+}
+.writeup .location {
+  margin-bottom: 2vh;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+.navbar-row {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+}
+.navbar-trans {
+  background-color: rgba(0, 0, 0, 0);
+}
+.navbar-dark {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+/* .arrow {
+  font: 200px;
+  cursor: pointer;
+} */
+.fa-arrow-down {
+  font-size: 1.5vw;
+  opacity: 0.6;
+  cursor: pointer;
+  position: relative;
+  animation: mymove 1s infinite;
+}
+@keyframes mymove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 20px;
+  }
+}
+/* font-size: 2vw;
+font-weight: 600; */
+.telephone {
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 3rem !important;
+}
+.telephone .fas {
+  height: 1vw;
+}
+
+.writeup .btn {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  margin: 12vh 10vw 1vh;
+  font-weight: bold;
+  cursor: pointer;
+}
+#home a {
+  text-decoration: none;
+  word-spacing: 0px;
+}
+.writeup a {
+  text-decoration: none;
+  color: black;
+}
+
+/* About section */
+/* #about {
+  height: 100vh;
+} */
+/* End about section */
+
+/* Services section*/
+#services .fas {
+  font-size: 3vw;
+}
+.experience-year {
+  border-radius: 100%;
+  font-size: 6rem;
+}
+/* End services section*/
+
+/* FAQs section*/
+.height {
+  min-height: 100vh;
+}
+/*=== 5.3 Accordion ===*/
+.accordion .accordion-item {
+  border: none;
+  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
+  background-color: transparent;
+}
+
+.accordion .accordion-header .accordion-button {
+  box-shadow: none;
+  padding: 1.25rem 1.25rem 1.25rem 2.25rem;
+  border-radius: 4px;
+  position: relative;
+  font-size: 1.125rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.accordion .accordion-header .accordion-button:after {
+  position: absolute;
+  content: " ";
+  left: 20px;
+  top: calc(50% + 2px);
+  width: 9px;
+  height: 9px;
+  border-color: #ccc;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-image: none;
+}
+
+.accordion .accordion-header .accordion-button.collapsed:after {
+  top: calc(50% - 2px);
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.accordion .accordion-body {
+  line-height: 1.8;
+  padding: 1rem 0 0.4rem 2.25rem;
+}
+
+.accordion.arrow-right .accordion-header .accordion-button {
+  padding-left: 1.25rem;
+}
+
+.accordion.arrow-right .accordion-header .accordion-button:after {
+  right: 15px;
+  left: auto;
+}
+
+.accordion.arrow-right .accordion-body {
+  padding-left: 1.25rem;
+}
+
+.accordion.accordion-flush .accordion-item {
+  margin: 0;
+}
+
+.accordion.accordion-flush .accordion-header .accordion-button {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  background: transparent;
+  color: #212529;
+}
+
+.accordion.accordion-flush
+  .accordion-item:first-of-type
+  .accordion-header
+  .accordion-button {
+  border-top: 0px;
+}
+
+.accordion.accordion-flush .accordion-header .accordion-button:after {
+  left: 18px;
+}
+
+.accordion.accordion-flush .accordion-header .accordion-button.collapsed {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.accordion.accordion-flush .accordion-body {
+  padding: 0rem 0 1rem 2.25rem;
+}
+
+.accordion.accordion-flush.arrow-right .accordion-header .accordion-button {
+  padding-left: 0;
+}
+
+.accordion.accordion-flush.arrow-right
+  .accordion-header
+  .accordion-button:after {
+  right: 0px;
+  left: auto;
+}
+
+.rtl .accordion .accordion-header .accordion-button {
+  padding: 1rem 2.25rem 1rem 1.25rem;
+}
+
+.rtl .accordion .accordion-header .accordion-button:after {
+  left: auto;
+  right: 12px;
+}
+
+.rtl .accordion .accordion-body {
+  padding-right: 2.25rem;
+  padding-left: 0;
+}
+
+.rtl .accordion.arrow-right .accordion-header .accordion-button {
+  padding-right: 1.25rem;
+  padding-left: 2.25rem;
+}
+
+.rtl .accordion.arrow-right .accordion-header .accordion-button::after {
+  left: 20px;
+  right: auto;
+}
+
+.rtl .accordion.arrow-right .accordion-body {
+  padding-right: 1.25rem;
+  padding-left: 0;
+}
+
+.rtl
+  .accordion.accordion-flush.arrow-right
+  .accordion-header
+  .accordion-button {
+  padding-right: 0;
+  padding-left: 2.25rem;
+}
+
+.rtl
+  .accordion.accordion-flush.arrow-right
+  .accordion-header
+  .accordion-button::after {
+  left: 6px;
+  right: auto;
+}
+/* End FAQs section*/
+
+#testimonial {
+  color: #fff;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(148, 148, 148, 0.3);
+}
+#carousel-testimonial {
+  padding: 5rem;
+}
+/* #testimonial h2 {
+  font-weight: bolder;
+  font-size: 3rem;
+  line-height: 1.5;
+} */
+.testimonials-img {
+  width: 15%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* My Skills */
+.progress {
+  height: 0.5rem;
+}
+.progress-bar {
+  background-color: #0d6efd;
+}
+
+/* contact */
+#contact {
+  min-height: 100vh;
+}
+/* End contact */
+@media screen and (max-width: 769px) {
+  .telephone {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .telephone {
+    font-size: 16px;
+  }
+}
+
+.hero {
+  min-height: 70vh !important;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px groove;
+  border-radius: 0px;
+}
+.form-control:focus {
+  border-color: rgba(0, 0, 0, 0.8);
+  box-shadow: none;
+}
+
+.box {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+/*=== 5.9 Portfolio ===*/
+.portfolio .portfolio-box {
+  position: relative;
+}
+
+.portfolio .portfolio-box .portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-box .portfolio-overlay {
+  text-align: center;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-box:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio .portfolio-box .portfolio-img img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-box:hover .portfolio-img img {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.portfolio .portfolio-box .portfolio-overlay-details {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.portfolio .portfolio-details {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.ajax-container {
+  position: relative;
+  background: #fff;
+  margin: 40px auto;
+  max-width: 1170px;
+  padding: 30px;
+}
+
+.rtl .mfp-content {
+  text-align: right;
+}
+
+.rtl .mfp-close {
+  left: 0px;
+  right: auto;
+}
