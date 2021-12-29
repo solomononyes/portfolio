@@ -1,5 +1,0 @@
-Signin - https://morning-mesa-45783.herokuapp.com/
-Tableau - https://public.tableau.com/views/Mission4_3-VisualisingDatawithTableau_16285445136450/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
-Keeper - https://sollykeeper.netlify.app/
-Simon - https://solomononyes.github.io/Simon-Game/
-Calorie - https://meal-calorie-tracker.netlify.app/
